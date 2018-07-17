@@ -1,4 +1,3 @@
-
 .nav
 	&_wrapper
 		position: relative
@@ -25,25 +24,31 @@
 	li
 		display: inline-block
 		a
-			margin-top: 50px
-			margin-left: 20px
-			margin-right: 20px
-			display: inline-block
+			margin: 50px 5px
+			display: block
 			text-transform: uppercase
-			height: 100%
 			font-size: 14px
 			color: #000
+			padding: 0 15px
+			position: relative //<<<<<<<
+			&::before,&::after //default
+				position: absolute
+				content: ''
+				top: 50%
+				width: 10px
+				height: 1px
+				margin-top: -1px
+				background: #000
+				opacity: 0
+				transition: opacity 0.3s, transform 0.3s
+			&::before
+				left: 0
+				transform: translateX(-100%)
+			&::after
+				right: 0
+				transform: translateX(100%)
 			&:active, &:hover
-				&:before
-					position: absolute
-					content: ''
-					width: 10px
-					height: 1px
-					background: #000
-				&:after
-					position: absolute
-					content: ''
-					width: 10px
-					height: 1px
-					background: grey
+				&::before, &::after
+					transform: translate(0)
+					opacity: 1
 
