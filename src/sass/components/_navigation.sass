@@ -1,0 +1,50 @@
+
+.nav
+	&_wrapper
+		position: relative
+		border-bottom: 1px solid #b2b2b2
+		min-height: 127px
+		background-color: $main-color
+	&_left
+		text-align: right
+	&_right
+		text-align: left
+	&_logo
+		width: 90px
+		margin-left: 50px
+		margin-top: 40px
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			height: 7px
+			width: 100px
+			background-color: #000
+			bottom: -32px
+			left: -8px
+	li
+		display: inline-block
+		a
+			margin-top: 50px
+			margin-left: 15px
+			margin-right: 15px
+			display: inline-block
+			text-transform: uppercase
+			height: 100%
+			font-size: 14px
+			color: #000
+			&:active, &:hover
+				&:before
+					position: absolute
+					content: ''
+					width: 10px
+					height: 1px
+					background: #000
+				&:after
+					position: absolute
+					content: ''
+					width: 10px
+					height: 1px
+					top: 58px
+					background: grey
+

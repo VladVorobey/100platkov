@@ -6,12 +6,15 @@ lorem: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quibusda
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
+  {% include "components/_top-line.html" %}
+	{% include "components/_navigation.html" %}
+  {# variable example #}
 
-	{# variable example #}
-	<h1 class="container">{{ lorem }}</h1>
+  <h1 class="container">{{ lorem }}</h1>
 
 
 	{# partial example #}
+
 	{% include "partials/_header.html" %}
 
 	{# mixin example #}
