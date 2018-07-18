@@ -1,10 +1,10 @@
-
 .nav
 	&_wrapper
 		position: relative
-		border-bottom: 1px solid #b2b2b2
+		border-bottom: 1px solid $borderbottom
 		min-height: 127px
 		background-color: $main-color
+		z-index: 10
 	&_left
 		text-align: right
 	&_right
@@ -49,3 +49,8 @@
 			&::after
 				right: 0
 				transform: translateX(100%)
+			&:active, &:hover
+				&::before, &::after
+					transform: translate(0)
+					opacity: 1
+

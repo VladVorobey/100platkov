@@ -1,0 +1,85 @@
+.firstScreen
+	height: 528px
+	width: 100%
+	background: url("../img/gradient.png") repeat
+	&_wrapper
+		position: relative
+		border-bottom: 1px solid $borderbottom
+		z-index: 1
+		overflow: hidden
+	&_left
+		margin: 0
+		padding: 0
+		img
+			margin-top: 53px
+	&_text
+		position: absolute
+		top: 129px
+		left: calc(38.5%)
+		h1
+			font-family: $sixth-font
+			font-size: 48px
+			position: relative
+			font-weight: 400
+			margin-top: 40px
+			text-transform: uppercase
+			&:before
+				position: absolute
+				content: ''
+				width: 67px
+				height: 1px
+				background-color: #000
+				left: -75px
+				top: 27px
+		h2
+			font-family: $seventh-font
+			font-size: 28px
+			font-weight: 100
+			text-transform: uppercase
+			line-height: 1.25em
+			margin-top: 6px
+			margin-left: 8px
+			span
+				font-family: $fourth-font
+		a
+			display: block
+			width: 211px
+			height: 54px
+			margin-left: 9px
+			margin-top: 26px
+			box-shadow: 7px 10px 12px rgba(0,0,0,.2)
+			transition: .5s ease
+			z-index: 10
+			background-color: #fa3b3b
+			text-align: center
+			color: #fff
+			text-transform: uppercase
+			padding-top: 15px
+			font-size: 18px
+			&:hover
+				box-shadow: 1px 15px 17px rgba(0,0,0,.2);
+				transition: all .4s ease;
+	&_right
+		position: absolute
+		top: 0
+		left: 50%
+		background: #000
+		opacity: 0.03
+		width: 280%
+		height: 528px
+		z-index: -1
+	&_line
+		position: absolute
+		width: 1px
+		height: 60px
+		background-color: #000;
+		left: 50%
+		top: 90px;
+	&_square
+		position: absolute
+		width: 150px
+		height: 150px
+		background: #fa3b3b
+		z-index: -10
+		bottom: 0
+		right: 0
