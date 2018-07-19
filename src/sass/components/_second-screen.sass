@@ -1,0 +1,91 @@
+.second-screen
+	&_wrapper
+		width: 100%
+		min-height: 702px
+		background: $main-color
+		border-bottom: 1px solid $borderbottom
+		position: relative
+		overflow: hidden
+	&__text
+		font-family: $eighth-font
+		font-size: 16px
+		text-align: center
+		text-transform: uppercase
+		color: #212121
+		opacity: .9
+		margin-top: 28px
+	&__img
+		display: block
+		margin: auto
+		position: relative
+		z-index: 2
+		&--order
+			margin-top: 96px
+			padding-left: 18px
+	.left_section
+		position: relative
+		margin-top: 155px
+		z-index: 10
+		&:before
+			content: ''
+			width: 179px
+			height: 20px
+			position: absolute
+			border-top: 1px solid #aeadad
+			border-left: 1px solid #aeadad
+			top: -63px
+			left: 175px
+	.right_section
+		position: relative
+		margin-top: 155px
+		z-index: 10
+		&:before
+			content: ''
+			width: 179px
+			height: 20px
+			position: absolute
+			border-top: 1px solid #aeadad
+			border-right: 1px solid #aeadad
+			top: -63px
+			left: 0
+	.center_section
+		position: relative
+		margin-top: 146px
+		z-index: 10
+		&:before
+			content: ''
+			width: 1px
+			height: 45px
+			position: absolute
+			border-left: 1px solid #aeadad
+			top: 285px
+			left: 175px
+.second-title
+	position: absolute
+.square-grey
+	display: block
+	position: absolute
+	width: 49.5vw
+	left: 0
+	top: 0
+	height: 100%
+	background: #fafafa
+	z-index: 1
+.square-blue
+	display: block
+	position: absolute
+	width: 130px
+	height: 150px
+	left: 0
+	top: 465px
+	z-index: 2
+	background-color: #00eaff
+.square-yellow
+	display: block
+	position: absolute
+	width: 150px
+	height: 170px
+	right: 86px
+	bottom: 0
+	z-index: 2
+	background-color: #fff600
