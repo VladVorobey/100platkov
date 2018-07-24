@@ -66,14 +66,14 @@
 				background-color: #fff
 				box-shadow: 3px 10px 20px rgba(0,0,0,.2)
 				h4
-					font-family: $fourth-font
+					font-family: $eighth-font
 					font-size: 19px
 					font-weight: 800
 					width: 400px
 					height: 135px
 					border-top: 1px solid grey
 					border-right: 1px solid grey
-					padding: 46px 10px
+					padding: 35px
 				.u
 					text-transform: uppercase
 				&--right
@@ -90,19 +90,36 @@
 						width: 20px
 						height: 69px
 						position: absolute
-						background-color: $third-color
 						top: 0
 						right: 96px
 						z-index: 9
 				&--red
 					&:before
-						background-color: #fa3b3b
+						background-color: $second-color
 				&--yellow
 					&:before
 						background-color: $fourth-color
 				&--blue
 					&:before
 						background-color: $third-color
+				&:after
+					content: ''
+					width: 315px
+					height: 1px
+					position: absolute
+					background-color: #000
+					bottom: 33px
+					right: 23px
+					z-index: 9
+			.rome
+				font-family: $seventh-font
+				font-weight: 100
+				font-size: 36px
+				position: absolute
+				top: 12px
+				left: 18px
+				padding-right: 10px
+				background: #fff
 		.square-grey
 			position: absolute
 			width: 50vw
