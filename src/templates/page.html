@@ -14,26 +14,29 @@ lorem: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, quibusda
   {% include "components/_fourth-screen.html" %}
   {% include "components/_fifth-screen.html" %}
   {% include "components/_sixth-screen.html" %}
+  {% include "components/_comments.html" %}
+  {% include "components/_nav-bottom.html" %}
+  {% include "components/_bottom-line.html" %}
 
-  {# variable example #}
+  <!--{# variable example #}-->
 
-  <h1 class="container">{{ lorem }}</h1>
-
-
-	{# partial example #}
-
-	{% include "partials/_header.html" %}
-
-	{# mixin example #}
-	{{mixins.icon('facebook')}}
+  <!--<h1 class="container">{{ lorem }}</h1>-->
 
 
-	{# data usage example #}
-		{% import "data/data.html" as tests %}
+	<!--{# partial example #}-->
 
-		{% for test in tests.list %}
-		<li>{{test.title}}</li>
-		{% endfor %}
-	{# end of example #}
+	<!--{% include "partials/_header.html" %}-->
+
+	<!--{# mixin example #}-->
+	<!--{{mixins.icon('facebook')}}-->
+
+
+	<!--{# data usage example #}-->
+		<!--{% import "data/data.html" as tests %}-->
+
+		<!--{% for test in tests.list %}-->
+		<!--<li>{{test.title}}</li>-->
+		<!--{% endfor %}-->
+	<!--{# end of example #}-->
 
 {% endblock %}

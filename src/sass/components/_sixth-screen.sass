@@ -1,0 +1,177 @@
+.sixth-screen
+	&__wrapper
+		width: 100%
+		min-height: 1025px
+		position: relative
+		border-bottom: 1px solid $borderbottom
+		z-index: 1
+		overflow: hidden
+		padding: 10px
+		.title
+			position: relative
+			text-align: center
+			max-width: 810px
+			height: 100%
+			margin: 104px auto 0
+			&__main
+				font-family: $default-font
+				font-size: 24px
+				text-transform: uppercase
+				&--strong
+					font-family: $eighth-font
+			&__text
+				&--red
+					color: $second-color
+				&--blue
+					color: $third-color
+			&:before
+				content: ''
+				width: 2px
+				height: 50px
+				position: absolute
+				background-color: #000
+				top: -70px
+				left: 50%
+				transform: translateX(-50%)
+			&:after
+				content: ''
+				width: 50px
+				height: 4px
+				position: absolute
+				background-color: #000
+				top: 50px
+				left: 50%
+				transform: translateX(-50%)
+		.square-grey
+			display: block
+			position: absolute
+			width: 49.5vw
+			left: 0
+			top: 0
+			height: 100%
+			background: #fafafa
+			z-index: -2
+		.ellipse_one
+			position: absolute
+			top: 260px
+			left: 462px
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			border: 15px solid $fourth-color
+			z-index: -1
+		.ellipse_two
+			position: absolute
+			top: 415px
+			left: 150px
+			width: 100px;
+			height: 100px;
+			border-radius: 50px;
+			border: 15px solid $fourth-color
+			z-index: -1
+		.button
+			display: block
+			width: 340px
+			height: 60px
+			margin: 100px auto 70px
+			box-shadow: 7px 10px 12px rgba(0,0,0,.2)
+			transition: .5s ease
+			z-index: 10
+			background-color: #fa3b3b
+			text-align: center
+			text-transform: uppercase
+			padding-top: 18px
+			font-size: 18px
+			&:hover
+				transform: translate(1px,1px)
+				box-shadow: -5px 15px 17px rgba(0,0,0,.2);
+				transition: all .4s ease;
+			a
+				color: #fff
+		.top-room, .bottom-room
+			.room__item
+				position: relative
+				width: 487px;
+				height: 200px;
+				background-color: #fff;
+				box-shadow: 5px 10px 25px rgba(0,0,0,.2);
+				&--left, &--right
+					.img-wrap
+						position: absolute
+						bottom: -5px
+					.text-wrap
+						text-decoration: underline
+						position: relative
+						width: 290px
+						height: 200px
+						text-align: center
+						padding: 60px 20px
+						&:before
+							content: ''
+							width: 46px
+							height: 3px
+							position: absolute
+							left: 50%
+							bottom: 36px
+							transform: translateX(-50%)
+						h6
+							font-size: 22px
+							font-family: $second-font
+							font-weight: 100
+						.extrabold
+							font-family: $third-font
+
+				&--left
+					margin-left: 45px
+					.img-wrap
+						left: 0
+					.text-wrap
+						float: right
+				&--right
+					margin-left: 5px
+					.img-wrap
+						right: 0
+					.text-wrap
+						float: left
+
+		.top-room
+			margin-top: 150px
+			.room__item
+				&--left
+					.text-wrap
+						&:before
+							background: $second-color
+				&--right
+					.text-wrap
+						&:before
+							background: $third-color
+						&:after
+							content: ''
+							position: absolute
+							bottom: 30px
+							right: 45px
+							width: 27px;
+							height: 27px;
+							border-radius: 50px;
+							border: 7px solid $second-color
+		.bottom-room
+			margin-top: 130px
+			.room__item
+				&--left
+					.text-wrap
+						&:before
+							background: #000
+						&:after
+							content: ''
+							position: absolute
+							top: 0
+							right: 0
+							width: 48px
+							height: 48px
+							border-radius: 0 0 0 50px
+							border-left: 15px solid #000000
+							border-bottom: 15px solid #000000
+				&--right
+					.text-wrap
+						&:before
+							background: $fourth-color

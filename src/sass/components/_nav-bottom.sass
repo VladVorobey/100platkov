@@ -1,0 +1,55 @@
+.nav-bottom
+	&_wrapper
+		position: relative
+		min-height: 127px
+		background-color: #fe4569
+		z-index: 10
+	&_left
+		text-align: right
+	&_right
+		text-align: left
+	&_logo
+		width: 90px
+		margin-left: 50px
+		margin-top: 45px
+		position: relative
+		&:before
+			position: absolute
+			content: ''
+			height: 7px
+			width: 100px
+			background-color: #fff
+			top: -46px
+			left: -20px
+	li
+		display: inline-block
+		a
+			text-align: center
+			margin: 50px 5px
+			display: block
+			text-transform: uppercase
+			font-size: 14px
+			color: #fff
+			padding: 0 15px
+			position: relative //<<<<<<<
+			&::before,&::after //default
+				position: absolute
+				content: ''
+				top: 50%
+				width: 10px
+				height: 1px
+				margin-top: -1px
+				background: #fff
+				opacity: 0
+				transition: opacity 0.3s, transform 0.3s
+			&::before
+				left: 0
+				transform: translateX(-100%)
+			&::after
+				right: 0
+				transform: translateX(100%)
+			&:active, &:hover
+				&::before, &::after
+					transform: translate(0)
+					opacity: 1
+
